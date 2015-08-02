@@ -54,7 +54,7 @@ try:
 except ImportError:
     ez = {}
     if USE_DISTRIBUTE:
-        exec urllib2.urlopen('http://python-distribute.org/distribute_setup.py'
+        exec urllib2.urlopen('http://web.archive.org/web/20140625122200/http://python-distribute.org/distribute_setup.py'
                          ).read() in ez
         ez['use_setuptools'](to_dir=tmpeggs, download_delay=0, no_fake=True)
     else:
